@@ -1,0 +1,34 @@
+CS4710 Artificial Intelligence - HW1: Expert Shell
+Name: Matias Rietig
+Comp.ID: mjr9r
+###########################################################################
+
+Programming language & compiler: Java 8 (JDK 1.8.0_144)
+
+Running instructions:
+There are 2 makefiles that can start the Shell:
+(1) makefile.bat on root level, it simply starts the runnable expertshell.jar that is on root level (java -jar expertshell.jar)
+(2) src/makefilebat in src folder, calls javac on ShellMain.java and executes the compiled class
+Both should have the same functionality.
+
+###########################################################################
+
+Source Code Overview (see src folder):
+Defintion/Fact/Rule - java files:
+These define classes to store and represent the corresponding elements of the expert system.
+
+ShellMain.java:
+Includes main method, takes user input and initializes an Expert instance
+
+Parser.java:
+Class that parses and structures the user input
+
+Expert.java:
+Class that represents an expert instance. Holds variables, facts and rules and can receive instructions from parser instances.
+Also, teach and list commands are implemented here.
+
+RuleParser.java:
+Handles most of the logic evaluation when backward or forward chaining has to be applied, i.e. learn, query and why commands.
+
+############################################################################
+
